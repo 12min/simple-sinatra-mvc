@@ -7,7 +7,7 @@ class Main < Sinatra::Base
   set :root, File.dirname(__FILE__)
   set :public_folder, Proc.new { File.join(root, 'public') }
 
-  Slim::Engine.options[:disable_escape] = true
+  Tilt.register Tilt::ERBTemplate, 'html.erb'
 
   YAML.load(ERB.new(File.read('./config/database.yml')).result)[$env].each do |key, value|
     set key, value

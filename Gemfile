@@ -12,7 +12,6 @@ gem 'sinatra', '~> 1.4'
 gem 'sinatra-activerecord', '~> 2.0'
 gem 'sinatra-flash', '~> 0.3'
 gem 'sinatra-static-assets', '~> 1.0'
-gem 'slim', '~> 3.0'
 
 # optional: just added for README on index.
 gem 'kramdown'

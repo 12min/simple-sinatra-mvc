@@ -11,7 +11,6 @@ require 'bundler'
   sinatra
   sinatra/flash
   sinatra/static_assets
-  slim
 ).each { |d| require d }
 
 $env = ENV['RACK_ENV']
